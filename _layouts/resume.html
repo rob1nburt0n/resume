@@ -43,10 +43,44 @@
       <section class="content-section">
 
         <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Front End Development</h4>
+          <p class="resume-item-copy">AngularJS, Javascript, HTML5, CSS3, SASS, Grunt, Bootstrap, JSON, Bower, Firebase </p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Back End Development</h4>
+          <p class="resume-item-copy">C#, .Net, Visual Studio, SQL</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Healthcare</h4>
+          <p class="resume-item-copy">BLS for Healthcare providers</p>
+        </div>
+
+      </section>
+      <!-- end Skills -->
+      
+
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
           <h2>Experience</h2>
         </header>
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item">
+          <h3 class="resume-item-title">Nashville Software School</h3>
+          <h4 class="resume-item-details">Apprentice Software Developer &bull; July 2015 &mdash; January 2016</h4>
+          <p class="resume-item-copy">Six month full-time intensive software bootcamp with an emphasis on front end
+           development and the .NET framework.</p>
+
+        </div><!-- end of resume-item -->
+
         <div class="resume-item">
           <h3 class="resume-item-title">Vanderbilt Breast Center</h3>
           <h4 class="resume-item-details">Interventional Technologist &bull; September 2006 &mdash; July 2015</h4>
@@ -68,14 +102,16 @@
         <div class="resume-item">
           <h3 class="resume-item-title">Lowe's Home Center</h3>
           <h4 class="resume-item-details">Commercial Credit Manager &bull; August 1996 &mdash; May 2004</h4>
-          <p class="resume-item-copy">Managed in house commercial credit accounts, tax exempt accounts and daily cash deposits and balancing</p>
+          <p class="resume-item-copy">Managed in-house commercial credit accounts, credit promotions and consumer
+           credit card accounts. Hosted and organized commercial customer appreciation
+           events. Responsible for fundraisers, donations and non-profit organization inquiries. </p>
 
         </div><!-- end of resume-item -->
 
       </section>
       <!-- end Experience -->
 
-      {% if site.resume_section_education %}
+      
       <!-- begin Education -->
       <section class="content-section">
 
@@ -91,15 +127,15 @@
 
         <div class="resume-item">
           <h3 class="resume-item-title">Nashville Software School</h3>
-          <h4 class="resume-item-details">Apprentice Software Developer &bull; 2015</h4>
+          <h4 class="resume-item-details">Apprentice Software Developer &bull; 2015 &mdash; 2016</h4>
           <p class="resume-item-copy">cohort10</p>
         </div>
 
       </section>
       <!-- end Education -->
-      {% endif %}
+      
 
-      {% if site.resume_section_projects %}
+      
       <!-- begin Projects -->
       <section class="content-section">
 
@@ -122,36 +158,8 @@
 
       </section>
       <!-- end Projects -->
-      {% endif %}
 
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Front End Development</h4>
-          <p class="resume-item-copy">HTML, CSS, SASS, AngularJS, Javascript</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Back End Development</h4>
-          <p class="resume-item-copy">C#, .net</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Healthcare</h4>
-          <p class="resume-item-copy">BLS for Healthcare providers</p>
-        </div>
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
-
-      {% if site.resume_section_recognition %}
+      
       <!-- begin Recognition -->
       <section class="content-section">
 
@@ -173,9 +181,9 @@
 
       </section>
       <!-- end Recognition -->
-      {% endif %}
+      
 
-      {% if site.resume_section_associations %}
+      
       <!-- begin Associations -->
       <section class="content-section">
 
@@ -197,6 +205,7 @@
         </div>
 
       </section>
+      
       <!-- end Associations -->
       {% endif %}
 
