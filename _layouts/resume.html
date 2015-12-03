@@ -39,32 +39,6 @@
 
       </header>
 
-       <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Front End Development</h4>
-          <p class="resume-item-copy">AngularJS, Javascript, HTML5, CSS3, SASS, Grunt, Bootstrap, JSON, Bower, Firebase </p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Back End Development</h4>
-          <p class="resume-item-copy">C#, .Net, Visual Studio, SQL</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Healthcare</h4>
-          <p class="resume-item-copy">BLS for Healthcare providers</p>
-        </div>
-
-      </section>
-      <!-- end Skills -->
-      
-
       <!-- begin Experience -->
       <section class="content-section">
 
@@ -111,7 +85,7 @@
       </section>
       <!-- end Experience -->
 
-      
+      {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
 
@@ -127,15 +101,15 @@
 
         <div class="resume-item">
           <h3 class="resume-item-title">Nashville Software School</h3>
-          <h4 class="resume-item-details">Apprentice Software Developer &bull; 2015 &mdash; 2016</h4>
+          <h4 class="resume-item-details">Apprentice Software Developer &bull; 2015</h4>
           <p class="resume-item-copy">cohort10</p>
         </div>
 
       </section>
       <!-- end Education -->
-      
+      {% endif %}
 
-      
+      {% if site.resume_section_projects %}
       <!-- begin Projects -->
       <section class="content-section">
 
@@ -158,8 +132,36 @@
 
       </section>
       <!-- end Projects -->
+      {% endif %}
 
-      
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Front End Development</h4>
+          <p class="resume-item-copy">AngularJS, Javascript, HTML5, CSS3, SASS, Grunt, Bootstrap, JSON, Bower, Firebase </p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Back End Development</h4>
+          <p class="resume-item-copy">C#, .Net, Visual Studio, SQL</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Healthcare</h4>
+          <p class="resume-item-copy">BLS for Healthcare providers</p>
+        </div>
+
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+
+      {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
       <section class="content-section">
 
@@ -181,9 +183,9 @@
 
       </section>
       <!-- end Recognition -->
-      
+      {% endif %}
 
-      
+      {% if site.resume_section_associations %}
       <!-- begin Associations -->
       <section class="content-section">
 
@@ -206,7 +208,6 @@
 
       </section>
       <!-- end Associations -->
-      
       {% endif %}
 
       {% if site.resume_section_links %}
